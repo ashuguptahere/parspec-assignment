@@ -13,19 +13,19 @@ cd parspec-assignment
 ```
 
 
-### 3. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) for Linux:
+### 2. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) for Linux:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 
-### 4. To install all the requirements:
+### 3. To install all the requirements:
 ```bash
 uv sync
 ```
 
 
-### 5. Starting the `frontend` and `backend` servers and innstall all the dependencies:
+### 4. Starting the `frontend` and `backend` servers and innstall all the dependencies:
 
 ```bash
 uv run main.py

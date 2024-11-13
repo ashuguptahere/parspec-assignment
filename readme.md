@@ -10,19 +10,19 @@ It includes training a CNN on a custom image dataset.
 Clone the project
 
 ```bash
-  git clone https://github.com/ashuguptahere/parspec-assignment.git
+git clone https://github.com/ashuguptahere/parspec-assignment.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd parspec-assignment
+cd parspec-assignment
 ```
 
 Starting the Server, Frontend, and Installing Dependencies
 
 ```bash
-  python3 main.py
+python3 main.py
 ```
 
 

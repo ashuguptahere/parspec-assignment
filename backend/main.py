@@ -1,5 +1,6 @@
 import os
 import io
+import gdown
 import requests
 import numpy as np
 from PIL import Image
@@ -7,7 +8,7 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 
-MODEL_URL = "https://qleapmodel.s3.amazonaws.com/model_100.h5"
+MODEL_URL = "https://drive.google.com/uc?id=1PTX_NXhZkoymuni3zpi2lhjpa145lkbm"
 MODEL_DIR = os.path.join(os.getcwd(), "model")
 MODEL_PATH = os.path.join(MODEL_DIR, "model_100.keras")
 
@@ -17,11 +18,10 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 if not os.path.exists(MODEL_PATH):
     response = requests.get(MODEL_URL)
     if response.status_code == 200:
-        print("Downloading the model from S3")
-        with open(MODEL_PATH, "wb") as f:
-            f.write(response.content)
+        print("Downloading the model from Google Drive")
+        gdown.download(MODEL_URL, MODEL_PATH)
     else:
-        raise ValueError("Failed to download the model from S3")
+        raise ValueError("Failed to download the model from Google Drive")
 else:
     print("Model already exists. Skipping download.")
 

@@ -163,3 +163,4 @@ cython_debug/
 
 # Unnecessary files/directories
 dataset/
+dataset.zip

@@ -24,8 +24,14 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 ```
 
+### 4. Download and extract `dataset.zip` file:
+```bash
+gdown "https://drive.google.com/uc?id=1KQebmd59f_PT1taK0EsJF5DCSMcqxNYX"
+unzip dataset.zip
+```
 
-### 4. Starting the `frontend` and `backend` servers and innstall all the dependencies:
+
+### 5. Starting the `frontend` and `backend` servers and innstall all the dependencies:
 
 ```bash
 uv run main.py

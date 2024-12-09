@@ -1155,7 +1155,7 @@ wheels = [
 ]
 
 [[package]]
-name = "parspec-assignment-gradio"
+name = "parspec-assignment"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

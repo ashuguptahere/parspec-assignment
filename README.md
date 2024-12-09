@@ -2,6 +2,8 @@
 
 This project is a deep learning image classification task using TensorFlow and Keras. It includes training a CNN on a custom image dataset.
 
+# Live hosted [LINK](https://huggingface.co/spaces/ashuguptahere/parspec-assignment-gradio)
+
 ## 📥 Installation:
 
 ### 1. Clone the project and change the directory:
@@ -41,6 +43,7 @@ gradio app.py
 ## Results:
 ![](assets/img1.png)
 ![](assets/img2.png)
+![](assets/img3.png)
 
 ## 🤝 Contributing:
 
